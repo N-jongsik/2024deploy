@@ -22,7 +22,7 @@ public class FoodApi {
 	@Autowired
 	private FoodService foodService;
 
-	@GetMapping("/foods")
+	@GetMapping("/foodview")
 	public List<FoodView> getFoods() {
 		return foodService.getAllFoods();
 	}
